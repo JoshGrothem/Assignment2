@@ -55,8 +55,8 @@ public class MyMain {
 	private void makeWords() {
 		Words tiles = new Words(textInput.getText());
 		/**
-		 * I did the input validation here so it checks before it runs the code for combinations
-		 * That way it does not run all this extra code if not necessary
+		 * I did the input validation here so it checks before it runs the code for
+		 * combinations That way it does not run all this extra code if not necessary
 		 */
 		for (int i = 0; i < textInput.getText().length(); i++) {
 			char c = textInput.getText().charAt(i);
@@ -66,16 +66,15 @@ public class MyMain {
 			/**
 			 * I know the directions say let it be up to 7 tiles but it takes a very long
 			 * time to run so to be safe I only let the use input 6 Sorry it might work fine
-			 * on my laptop, but I've been doing this on my crappy desktop
-			 * It runs slow with 6
-			 * but it is instant with 4, so I hope that is fine
+			 * on my laptop, but I've been doing this on my crappy desktop It runs slow with
+			 * 6 but it is instant with 4, so I hope that is fine
 			 */
 			else if (textInput.getText().length() < 4 || textInput.getText().length() > 6) {
 				textOutput.setText("Invalid Input");
 			} else {
 				textOutput.setText(tiles.scramble(textInput.getText().length()));
 			}
-			//this is to test pushing a change :3
+			// this is to test pushing a change :3
 		}
 
 	}
