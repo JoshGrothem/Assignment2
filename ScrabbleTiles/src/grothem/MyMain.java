@@ -75,6 +75,7 @@ public class MyMain {
 			} else {
 				textOutput.setText(tiles.scramble(textInput.getText().length()));
 			}
+			//this is to test pushing a change :3
 		}
 
 	}
